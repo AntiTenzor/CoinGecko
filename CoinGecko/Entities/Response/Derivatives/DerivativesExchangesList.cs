@@ -9,5 +9,12 @@ namespace CoinGecko.Entities.Response.Derivatives
 
         [JsonProperty("name")]
         public string Name { get; set; }
+
+        public override string ToString()
+        {
+
+            string res = $"id:{Id}; Name:{Name}";
+            return res;
+        }
     }
 }
