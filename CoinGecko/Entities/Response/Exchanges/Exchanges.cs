@@ -22,5 +22,12 @@ namespace CoinGecko.Entities.Response.Exchanges
 
         [JsonProperty("image")]
         public string Image { get; set; }
+
+        public override string ToString()
+        {
+
+            string res = $"id:{Id}; Name:{Name}; Url:{Url}";
+            return res;
+        }
     }
 }
