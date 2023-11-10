@@ -22,14 +22,17 @@
             Coin Gecko Api wrapper written in .net standard 2.0 for more information please check the official documentation from https://www.coingecko.com/api/docs/v3
         </PackageReleaseNotes>
         <Version>1.6.0</Version>
+        <GenerateDocumentationFile>True</GenerateDocumentationFile>
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+      <Folder Include="Services\" />
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Services\" />
+      <Reference Include="API.Shared.Newtonsoft.Json">
+        <HintPath>..\SharedBinaries\NewtonsoftJson\API.Shared.Newtonsoft.Json.dll</HintPath>
+      </Reference>
     </ItemGroup>
 
 </Project>
